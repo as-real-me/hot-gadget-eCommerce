@@ -79,7 +79,20 @@ p{
     
 }
 
-/* .mtb-50{
-    margin-top: 50px;
+
+
+/* Subscribe */
+#subscribe{
+    height: 300px;
     margin-bottom: 100px;
-} */
+    border-radius: 5px 20px;
+}
+
+#subscribe h6{
+    color: gray;
+}
+.form-control{
+    margin-bottom: 5px;
+}
+
+
