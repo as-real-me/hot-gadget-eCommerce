@@ -1,0 +1,85 @@
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    color: #707070;
+}
+
+/* Top Banner */
+.carousel-indicators  li{
+    background-color: #CECECE;
+    height: 10px;
+    border-radius: 6px;
+    border: 1px solid #CECECE;
+    width: 2%;
+}
+
+
+.carousel-indicators .active{
+    background-image: linear-gradient(45deg, #FF9C35, #FFD019);
+    height: 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #FF9C35, #FFD019);
+    width: 7%;
+}
+
+
+/* Smartphone */
+.smartphone, .laptop, .catagories{
+    margin-top: 100px;
+}
+
+.smartphone h6{
+    color: #FF9D00;
+}
+
+.card{
+    border: none;
+    border-radius: 15px;
+}
+.card-footer{
+    background-color: white;
+    border: none;
+}
+
+
+/* Laptop */
+
+.laptop h6{
+    color: #FF9D00;
+}
+
+
+
+/* Catagories */
+.divider{
+    height: 6px;
+    background-image: linear-gradient(-45deg, #FF9C35, #FFD019);
+    width: 10%;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+.catagories {
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.catagories .card{
+    border: none;
+    border-radius: 5px 20px;
+    height: 250px;
+
+    
+}
+
+/* .mtb-50{
+    margin-top: 50px;
+    margin-bottom: 100px;
+} */

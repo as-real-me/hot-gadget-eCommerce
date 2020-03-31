@@ -4,9 +4,454 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Gadget E-commerce using Bootstrap</title>
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap" rel="stylesheet">
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custome CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+    <!--Navbar  -->
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light nav-bg-color ">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                <img class="w-100" src="images/logo.png" alt="">
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img class="w-100" src="images/logo.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link m-2 menu-item">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      
+    </div>
+
+
+    <!-- Top Banner -->
+
+    <div class="container top-banner">
+
+        <!-- Carousel -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <!-- Slider 1 -->
+                <div class="row">
+              
+                    <!-- Text Div -->
+                    <div class="col-md-6   d-flex align-items-center">
+              
+                      <div>
+                          <h1>Mackbook Pro</h1>
+                          <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. It has roots in a piece of classical Latin <br> literature.
+                          </p>
+              
+                          <button class="btn btn-dark"> Buy Now >></button>
+                      </div>
+              
+                    </div>
+              
+                    <!-- Image Div -->
+                    <div class="col-md-6   ">
+              
+                        <img class="w-100" src="images/banner-products/product-1.png" alt="">
+              
+                    </div>
+                   </div>
+              </div>
+              <div class="carousel-item">
+                <!-- Slider 2 -->
+                <div class="row">
+              
+                    <!-- Text Div -->
+                    <div class="col-md-6   d-flex align-items-center">
+              
+                      <div>
+                          <h1>Google Home</h1>
+                          <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. It has roots in a piece of classical Latin <br> literature.
+                          </p>
+              
+                          <button class="btn btn-dark"> Buy Now >></button>
+                      </div>
+              
+                    </div>
+              
+                    <!-- Image Div -->
+                    <div class="col-md-6   ">
+              
+                        <img class="w-100" src="images/banner-products/slider-1.png" alt="">
+              
+                    </div>
+                   </div>
+              </div>
+              <div class="carousel-item">
+                <!-- Slider 3 -->
+                <div class="row">
+              
+                    <!-- Text Div -->
+                    <div class="col-md-6   d-flex align-items-center">
+              
+                      <div>
+                          <h1>JBL Blutooth Speaker</h1>
+                          <p>Contrary to popular belief, Lorem Ipsum is not simply <br> random text. It has roots in a piece of classical Latin <br> literature.
+                          </p>
+              
+                          <button class="btn btn-dark"> Buy Now >></button>
+                      </div>
+              
+                    </div>
+              
+                    <!-- Image Div -->
+                    <div class="col-md-6   ">
+              
+                        <img class="w-100" src="images/banner-products/slider-3.png" alt="">
+              
+                    </div>
+                   </div>
+              </div>
+            </div>
+
+            <!-- I don't want to use carousel controller as we don't have it in our ui design -->
+            <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> -->
+          </div>
+     
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Smartphone -->
+    <div class="container smartphone">
+       
+        <!-- Text Part -->
+        <div class="d-flex bd-highlight mb-3">
+            <div class="p-2 bd-highlight"> <h3>Smartphone</h3></div>
+            <div class="ml-auto p-2 bd-highlight"><h6>See All</h6></div>
+          </div>
+
+
+          <!-- Card Part -->
+          <div class="card-deck text-center">
+            <div class="card shadow ">
+              <div>
+                <img src="images/phone/phone-2.png" class="card-img-top w-75 mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 11 Pro</h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+              </div>
+              </div>
+              <div class="card-footer mb-3">
+                  <h5>$999</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+            <div class="card shadow">
+             <div>
+                <img src="images/phone/phone-3.png" class="card-img-top w-75  mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung Galaxy Note10+</h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+                </div>
+             </div>
+              <div class="card-footer mb-3">
+                  <h5>$799</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div>
+                <img src="images/phone/phone-1.png" class="card-img-top w-75  mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Redmi K30</h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+              </div>
+              </div>
+              <div class="card-footer mb-3">
+                  <h5>$699</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Laptop -->
+    <div class="container laptop">
+       
+        <!-- Text Part -->
+        <div class="d-flex bd-highlight mb-3">
+            <div class="p-2 bd-highlight"> <h3>Laptop</h3></div>
+            <div class="ml-auto p-2 bd-highlight"><h6>See All</h6></div>
+          </div>
+
+
+          <!-- Card Part -->
+          <div class="card-deck text-center">
+            <div class="card shadow ">
+              <div>
+                <img src="images/laptop/product-1.png" class="card-img-top w-75 mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Asus VivoBook </h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+              </div>
+              </div>
+              <div class="card-footer mb-3">
+                  <h5>$999</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+            <div class="card shadow">
+             <div>
+                <img src="images/laptop/product-2.png" class="card-img-top w-75  mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Razer Blade 15 </h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+                </div>
+             </div>
+              <div class="card-footer mb-3">
+                  <h5>$2799</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div>
+                <img src="images/laptop/product-3.png" class="card-img-top w-75  mt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Xiaomi Mi Notebook Pro</h5>
+                  <p class="card-text">Some quick example text to build on
+                      the card title.</p>
+              </div>
+              </div>
+              <div class="card-footer mb-3">
+                  <h5>$999</h5>
+                  <button class="btn btn-dark"> Buy Now >></button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+    <!-- Catagories -->
+    <!-- <div class="container catagories">
+        <h3 class="text-center cat mt-3">Categories</h3>
+        Devider under catagory
+        <div class="d-flex justify-content-center">
+            <div class="divider text-center"></div>
+        </div>
+
+        <div class="row mt-50">
+            <div class="col-md-6">
+               <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+
+                        <div class="card shadow d-flex justify-content-center align-items-center" style="width: 18rem;">
+                                    <div>
+                                        <img src="images/Categories/bag.png" class="card-img-top" alt="...">
+                                        <div class="card-body text-center">
+                                        <p class="card-text">Bag</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                
+                <div class="col-md-6">
+
+                    <div>
+                            
+                        <div class="card shadow d-flex justify-content-center align-items-center" style="width: 18rem;">
+                            <div>
+                                <img src="images/Categories/perfume.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                <p class="card-text">Beauty</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card shadow mt-3 d-flex justify-content-center align-items-center" style="width: 18rem;">
+                            <div>
+                                <img src="images/Categories/shoe.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                <p class="card-text">Shoes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+               </div>
+            </div>
+             No more col here
+            <div class="col-md-6">
+                <img class="w-100" src="images/Categories/pale-order.png" alt="">
+            </div>
+        </div>
+
+
+
+     
+        
+    </div> -->
+
+
+
+    <!-- Test Again -->
+    <div class="container catagories">
+            <h3 class="text-center cat mt-3">Categories</h3>
+            <!-- Devider under catagory -->
+            <div class="d-flex justify-content-center">
+                <div class="divider text-center"></div>
+            </div>
+
+
+
+            <!-- Half with part -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row d-flex align-items-center ">
+                        <div class="col-md-6 ">
+                            <!-- Card 1 -->
+                            <div class=" ">
+
+
+
+
+
+                                <div class="card-deck">
+                                    <div class="card shadow d-flex justify-content-center align-items-center">
+                                     <div class="">
+                                        <img src="images/Categories/bag.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title text-center mb-0">Bag</h5>
+                                        </div>
+                                     </div>
+                                    </div>
+                                   
+                                  </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Card 2 -->
+                            <div class="">
+                                <div class="card-deck">
+                                    <div class="card shadow d-flex justify-content-center align-items-center">
+                                     <div class="">
+                                        <img src="images/Categories/perfume.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title text-center mb-0">Beauty</h5>
+                                        </div>
+                                     </div>
+                                    </div>
+                                   
+                                  </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class=" mt-4">
+                                <div class="card-deck">
+                                    <div class="card shadow d-flex justify-content-center align-items-center">
+                                     <div class="">
+                                        <img src="images/Categories/shoe.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title text-center mb-0">Shoes</h5>
+                                        </div>
+                                     </div>
+                                    </div>
+                                   
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <img class="w-100" src="images/Categories/pale-order.png" alt="">
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
 </body>
 </html>
